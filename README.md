@@ -1,1 +1,1 @@
-# mugihos-github.io
+# mugihos.github.io
