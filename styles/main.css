@@ -7,8 +7,34 @@ body {
   background-size: cover;
   height: 50%; */
   font-family: 'Karla', sans-serif;
+  margin: 15px;
+  padding: 15px;
 }
 
 h1 {
   font-family: 'Space Grotesk', sans-serif;
 }
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+}
+
+.topnav a {
+  float: right;
+  color: #8E4162;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
+  font-family: 'Space Grotesk', sans-serif;
+  text-decoration: none;
+}
+/* 
+#top-header {
+  float: left;
+  padding: 15px;
+} */
+/* 
+#landing-page {
+  float: center;
+} */
