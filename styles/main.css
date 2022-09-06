@@ -1,4 +1,14 @@
 body {
-  color: aqua;
-  background-color: blueviolet;
+  color: #0F1020;
+  background-color: #DBDBDB;
+  /* background-image: url("/images/layered-waves-haikei.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%; */
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
 }
