@@ -64,10 +64,6 @@ img {
   padding: 2rem;
 }
 
-/* .profile {
-
-} */
-
 /* header colour and font */
 .header {
  font-family: 'Space Grotesk', sans-serif;
@@ -147,9 +143,7 @@ li {
 }
 
 /* blog post template */
-.container {
-  justify-content: center;
-}
+
 
 
 /* Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes */
@@ -157,7 +151,7 @@ li {
   body {
     width: 100%;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
   }
   .header {
     font-family: 'Space Grotesk', sans-serif;
@@ -166,18 +160,13 @@ li {
    }
    .nav-elements {
     float: none;
+    padding:0;
     /* width: 100%; */
    }
    .blog-title {
     display: none;
   }
-  /* a {
-    display: block;
-    padding: 0;
-    background-color: none;
-    text-decoration: none;
-    color: #8E4162;
-  } */
+
   .intro {
     padding: 1.4rem;
     margin-top: 14%;
@@ -193,13 +182,23 @@ li {
     font-size: 1rem;
     margin-top: 1.3rem;
   }
+  .about-me, .post-list, .individual-posts {
+    padding: 1rem;
+    margin: 1rem;
+  }
 
 }
 
 @media screen and (min-width: 768px) {
-  /* body {
-    background-color: #8DA483;
-  } */
+  .name {
+    color: #8E4162;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #a7a99cff;
+    text-underline-offset: 0.5rem;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
