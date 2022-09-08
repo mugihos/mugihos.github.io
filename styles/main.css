@@ -15,7 +15,7 @@ body {
   color: #0F1020;
   background-color: #DBDBDB;
   font-family: 'Karla', sans-serif;
-  margin: 1.5rem;
+  margin: 1.8rem;
   padding: 1rem;
   max-width: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 600 600'%3E%3Cpath d='M-34.09090159491325 411.1888120291237C-76.39859316900993 421.85314918732695 -109.09089905178172 476.5734352387592 -88.63635371283317 515.0349729177956C-68.18180837388462 553.4965105968321 4.195815502051289 623.2517443614805 88.63637043877816 641.9580381033425C173.07692537550503 660.6643318452045 372.9020819052495 653.6713356293842 418.00697590752816 627.2727353689676C463.11186990980684 600.8741351085508 401.3985978150803 512.9370674409076 359.26573445245003 483.56643654084246C317.13287108981984 454.1958056407774 230.76923507297414 463.1118873871967 165.2097957317469 451.04894996857684C99.65035639051968 438.9860125499571 8.216789979183432 400.5244748709206 -34.09090159491325 411.1888120291237C-76.39859316900993 421.85314918732695 -109.09089905178172 476.5734352387592 -88.63635371283317 515.0349729177956 ' fill='url(&quot;%23SvgjsLinearGradient1002&quot;)' fill-opacity='0.89' transform='matrix(1.0000000000000007,8.881784197001252e-16,-8.881784197001252e-16,1.0000000000000007,1.9895196601282805e-13,-4.547473508864641e-13)'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='SvgjsLinearGradient1002'%3E%3Cstop stop-color='hsl(340, 45%25, 50%25)' offset='0'%3E%3C/stop%3E%3Cstop stop-color='hsl(340, 45%25, 80%25)' offset='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
@@ -24,15 +24,24 @@ body {
   background-position: left bottom;
 }
 
-/* genegral text settings */
+/* genegral settings */
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
   padding: 0.2rem 0;
   margin: 1rem 0;
 }
 
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+  padding: 0.4rem 0 ;
+}
+
 p {
   font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  padding: 1.2rem 0;
+  font-weight: 200;
   /* padding: 0.3rem 0.5rem;
   margin: 0.3rem 1rem; */
 }
@@ -46,12 +55,13 @@ a {
 /* image settings */
 img {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 4px;
   float: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 2rem;
 }
 
 /* .profile {
@@ -66,7 +76,7 @@ img {
 }
 
 /* navigation menu */
-.navbar {
+.navbar{
   list-style-type: none;
   margin: 1rem 1.5rem;
   padding: 0.5 1rem;
@@ -79,6 +89,7 @@ img {
   float: left;
   font-weight: 600;
   font-size: 2rem;
+  padding-top: 0.6rem;
 }
 
 .nav-elements {
@@ -106,6 +117,7 @@ img {
 
 .about-me, .post-list, .individual-posts {
   padding: 2rem;
+  margin: 0 3.5rem;
 }
 
 /* posts page with blog links */
@@ -113,13 +125,31 @@ img {
   background-color: none;
   text-decoration: none;
   color: #8E4162;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
-/* .column {
-  float: left;
-  flex: 50%;
-} */
+.posts {
+  list-style-type: none;
+}
 
+.post-list-title {
+  font-size: 2rem;
+}
+
+li {
+  margin: 1.5rem 0;
+}
+
+.core, .tech {
+  margin: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+/* blog post template */
+.container {
+  justify-content: center;
+}
 
 
 /* Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes */
@@ -173,7 +203,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  /* body {
-    background-color: #b91520;
-  } */
+  .individual-posts, .about-me, .post-list {
+    width: 974px; 
+    margin: 0 auto;
+  }
 }

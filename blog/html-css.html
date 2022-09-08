@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="header">
+      <!-- this is the navigation bar that should have 4 sections to the right + header logo to the left + both aligned + linked to correct pages -->
+          <div class="navigation">
+            <nav>
+              <ul class="navbar">
+                <li class="blog-title"><a href="../index.html">Mugiho.S</a></li>
+                <li class="nav-elements" id="nav-home"><a href="../index.html">Home</a></li>
+                <li class="nav-elements"><a href="../about/about-me.html">About</a></li>
+                <li class="nav-elements"><a href="../posts.html">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+  
+    <!-- post section -->
+    <div class="individual-posts">
+      <div class="blog-heading">
+        <h1>What is the difference between Margin, Border, and Padding?</h1>
+        <h2><em>Formulate Learning Plan</em></h2>
+        <h3>Sprint 2 - Technical</h3>
+      </div>
+      <div class="article-body">
+        <img src="../images/Group 1.png" alt="image of css border, margin and padding">
+        <p>
+          Let's imagine you had a glassware you want to send to your friend via post for their birthday. You would probably wrap this in like ten layers of bubble wrap, another layer of cute wrapping paper and out this in a box to send. All we do now is cross our fingers and hope this arrives one piece  (am I going too overboard here?)
+        </p>
+        <h4>If we convert this to CSS, we would consider the glassware as the content. This sits at the center and everything goes around this.</h4>
+        <p>
+          The first layer outside of the glassware is the bubblewrap. This is called the padding in CSS and it is a space that surrounds directly outside of the content. It may be difficult to imagine as it's something we cannot see (air). but it's there. This can be used to adjust the individual look like how close you want the button text to be in relation to the border outline.
+        </p>
+        <p>
+          The second layer is that cute wrapping paper we just used to wrap the present wrapped in bubblewrap. This is called the border and draws the line (an actual line too sometimes) between the padding and the margin. Border as opposed to padding, is something that can be seen. It can have different styles such as colour, thickness and patterns.
+        </p>
+        <p>
+          The third layer is the box. This is called the margin in CSS and is a space that surrounds the outer side of the border. Similar to padding, it is transparent and cannot be seen (but it's there!) This can be useful if you want to create more space in relation to other elements. 
+        </p>
+        <h4>When you set margin/padding in CSS</h4>
+        <img src="../images/margin-oneline.png" alt="margin css showing four sides">
+        <p>There are different ways you can set the margin in CSS. You can list them out like above. This is in a clockwise order starting from Top > Right > Bottom > Left. </p>
+        <img src="../images/margin-separate.png" alt="margin css listing out each side">
+        <p>This is the same as the first example but more easier to see which margin side is set to which number.</p>
+        <img src="../images/margin-two.png" alt="margin css listing two sides">
+        <p>The last method is useful if you just need to set the same for top/bottom or right/left. The first number represents margin for top/bottom and the second number is for right/left side margin.</p>
+        <p>I hope you find this helpful.</p>
+      </div>
+    </div>
+  </body>
+</html>
