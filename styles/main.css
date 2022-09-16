@@ -154,6 +154,12 @@ pre > code {
   word-wrap: normal;
 }
 
+#wrap-image {
+  float: right;
+  margin: none;
+  padding: none;
+}
+
 
 /* Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes */
 @media screen and (max-width: 767px) {
