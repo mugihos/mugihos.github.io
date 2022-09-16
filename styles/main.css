@@ -144,7 +144,15 @@ li {
 }
 
 /* blog post template */
-
+pre, code {
+  font-weight: 500;
+  font-size: 1rem;
+}
+pre > code {
+  display: block;
+  padding: 0.5rem;
+  word-wrap: normal;
+}
 
 
 /* Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes */

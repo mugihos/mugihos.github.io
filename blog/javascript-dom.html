@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="header">
+      <!-- this is the navigation bar that should have 4 sections to the right + header logo to the left + both aligned + linked to correct pages -->
+          <div class="navigation">
+            <nav>
+              <ul class="navbar">
+                <li class="blog-title"><a href="../index.html">Mugiho.S</a></li>
+                <li class="nav-elements" id="nav-home"><a href="../index.html">Home</a></li>
+                <li class="nav-elements"><a href="../about/about-me.html">About</a></li>
+                <li class="nav-elements"><a href="../posts.html">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+  
+    <!-- post section -->
+    <div class="individual-posts">
+      <div class="blog-heading">
+        <h1>JavaScript Fundamentals</h1>
+        <h3>Sprint 3 - Technical</h3>
+      </div>
+      <div class="article-body">
+        <h2><em>How is JavaScript realted to HTML and CSS?</em></h2>
+        <img src="../images/lukas-denier-YiXsjwJKXmo-unsplash.jpg" alt="image of baby yod staring up at the sky">
+        <h4>JavaScript is like breathing life into something static. </h4>
+          <p>
+            Think of your favourite animated character. It used to be a basic line sketch of outlines, shapes, positions of certain body parts etc. This is the HTML where it shows the bone structure of it's shape, how it's connected and built to be one piece. Then, we have the CSS which adds extra colour, decorations, some uniqueness and personality to those characters. It may have blue hair, red outfit and wearing a huge yellow hat. At this stage, the character is not moving even though it looks beautiful and colourful. It needs something that makes them move.
+          </p>
+          <p>
+            JavaScript comes along and breathes in that spirit into the character. Now, the character actually moves around, sings, dances and reacts to our question and prompts. It can change their outfit colour, hide themselves behind the screen or become smaller or larger on the screen. All of these movement, action, changes can be done by JavaScript.</p>
+          <p>But JavaScript cannot exist alone because it needs something to act upon, without HTML there wouldn't be anything to change in the first place.</p>
+        <h4>What is control-flow and loops?</h4>
+          <p>Usually, code are executed from top to bottom, it's a one way street. This is called control-flow. However, say you're driving your car to a destination, there are many things you're doing along the way and things that happen in that journey. These can be called loops, conditionals and functions in programming.</p>
+          <p>For example, the action you're doing on the road 'driving your car' would contain multiple specific steps. One loop in programming called `while loop` makes you keep doing a certain task until that condition is no longer true.
+          </p>
+          <pre>
+            <code>
+              while (the light is green) {
+                I'll keep my foot on the accelerator.
+              }
+            </code>
+          </pre>
+          <p>Another example may be if/else statement which is part of the conditional statements. As the word represents, conditional statements gives you different result depending on different actions. The road you're driving on will have a whole set of these conditional statements which applies to you when you're driving.</p>
+          <pre>
+            <code>
+              if (the person in front of you == stops) {
+                let go of my foot from the accelerator and probably break 
+              } else {
+                keep driving the way you were (maybe you can go faster too)
+              }
+            </code>
+          </pre>
+          <p>You might take a break along the way which involves a whole different steps/things you do like eating, putting gas in etc. This can be represented via `function` which contains a whole set of activities that can contain loops and conditionals. This function can be run multiple times within your journey and it will include all the tasks.</p>
+          <pre>
+            <code>
+              function takingBreak () {
+                buy food - involves choosing, paying, eating
+                take a walk - get out of the car > check the map > walk around
+                take a selfie - find a view > take camera out > take a photo
+              }
+            </code>
+          </pre>
+          <p>Even though your goal seems simple, get to the final destination, you're completing multiple sets of tasks within that journey and we can change and control that process using different methods as discussed above.</p>
+        <h4>What is DOM???</h4>
+          <p>DOM stands for (document object model). It is an interface that shows how websites are structured and allows you to change these structures by manipulating these objects.</p>
+          <p>DOM is the representation of the structure of HTML and CSS in a document form. Since document is presented in objects, JavaScript will be able to read this and perform actions to change things, making the webpage more dynamic and interactive.  It also shows the structure and relationship of these different elements and is what allows JavaScript and HTML to communicate and work together.</p>
+          <p>There are multiple ways to access elements in HTML using the DOM. You can use the `docucment` object to access elements that are contained within that particular document.  DOM is often represented in a tree structure (called DOM tree) which is laid out in a hierarchal structure as below.</p>
+          <img src="../images/domtree.jpeg" alt="image of DOM tree"><a href="https://info340.github.io/dom.html">From Document Object Model (DOM)</a>
+          <p>When accessing these elements, you can use classes and IDs. For example:</p>
+          <pre>
+            <code>
+              document.getElementsByClassName('CLASS') //access to certain class
+              document.getElementById('ID') //access to certain ID 
+              document.querySelectorAll('p') //access to ALL p lement
+            </code>
+          </pre>
+        <h4>What is the difference between array and objects? How do we access them?</h4>
+          <p>An array is a list of data types like numbers, strings (words), and objects. It looks like the below.</p>
+          <pre>
+            <code>
+              const picnicBasket = ['sandwich', 'juice', 'fruits', 'chips']
+            </code>
+          </pre>
+          <p>You can access the above items by referring to a number called 'index'. This counts the position of where the item above is within the list of objects. Another thing to note here is that the index always starts counting at 0.</p>
+          <pre>
+            <code>
+              pinicBasket[0] // this will output sandwich
+            </code>
+          </pre>
+          <p>An object is a datatype creates with key/value pairs and you can access the set of information by stating one of the item in the pair. For example:</p>
+          <pre>
+            <code>
+              let picnicBasketDetail = {
+                name: 'sandwich'
+                type: 'main'
+                stock: 20
+              }
+            </code>
+          </pre>
+          <p>You can access the specific property by using a dot notation where you can objectName.keyORvalue or using square bracket notation objectName['keyORvalue']</p>
+          <pre>
+            <code>
+              pinicBasketDetail.type // this will output main
+              picnicBasketDetail['type'] // this will also output main
+            </code>
+          </pre>
+          <p>Square bracket notation allows you to enter a variable in the square bracket meaning if any key/values change in the original object, this can be easily updated.</p>
+          <pre>
+            <code>
+              var key = 'type'
+              picnicBasketDetail[key] //this will output main
+              picnicBasketDetail.key // this will output undefined
+            </code>
+          </pre>
+        <p>This occurs because the dot notation is trying to directly access a property called 'key' in the object and this does not exist. </p>
+      <h4>What is function and how is it useful?</h4>
+        <p>Function is a series of code that allows you to do multiple tasks within and return a value. The biggest reason why function is useful is because they're reusable. Once you setup a function with certain steps to do a specific action, you can call the function again at any point and it will do that whole steps in that function. It is efficient, keeps the code clean and really maximises the capacity of what programming can do.</p>
+        <p>If you want to use a function, you'll first need to define what the function is going to be called and what it's going to do:</p>
+        <pre>
+          <code>
+            function thisFunction () {
+              WHAT IT DOES
+            }
+          </code>
+        </pre>
+        <p>Then, you'll need to actually call the function so that it does what's inside of it. To do this, you simply type out the name of the function at a location where you want the program to run.</p>
+        <pre>
+          <code>
+            thisFunction()
+          </code>
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
