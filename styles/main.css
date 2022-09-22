@@ -167,6 +167,13 @@ pre > code {
   padding: none;
 }
 
+.paralist {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  padding: none;
+  font-weight: 200;
+  margin: 1.8rem;
+}
 
 /* Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes */
 @media screen and (max-width: 767px) {
